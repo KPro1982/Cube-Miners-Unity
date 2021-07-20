@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Nurse : GAgent {
+public class EntityNurse : GAgent {
 
     new void Start() {
 
@@ -20,7 +20,7 @@ public class Nurse : GAgent {
 
     void GetTired() {
 
-        beliefs.ModifyState("exhausted", 0);
+        agentBeliefs.ModifyState("exhausted", 0);
         //call the get tired method over and over at random times to make the nurse
         //get tired again
         Invoke("GetTired", Random.Range(0.0f, 20.0f));

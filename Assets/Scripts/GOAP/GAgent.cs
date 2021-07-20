@@ -26,8 +26,8 @@ public class GAgent : MonoBehaviour {
     public Dictionary<SubGoal, int> goals = new Dictionary<SubGoal, int>();
     // Our inventory
     public GInventory inventory = new GInventory();
-    // Our beliefs
-    public WorldStates beliefs = new WorldStates();
+    // Our agentStates
+    public WorldStates agentBeliefs = new WorldStates();
 
     // Access the planner
     GPlanner planner;
@@ -91,7 +91,7 @@ public class GAgent : MonoBehaviour {
             //look through each goal to find one that has an achievable plan
             foreach (KeyValuePair<SubGoal, int> sg in sortedGoals) {
 
-                actionQueue = planner.plan(actions, sg.Key.sGoals, beliefs);
+                actionQueue = planner.plan(actions, sg.Key.sGoals, agentBeliefs);
                 // If actionQueue is not = null then we must have a plan
                 if (actionQueue != null) {
 
