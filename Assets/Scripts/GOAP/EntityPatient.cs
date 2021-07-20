@@ -1,4 +1,4 @@
-﻿public class Patient : GAgent {
+﻿public class EntityPatient : GAgent {
 
     new void Start() {
 

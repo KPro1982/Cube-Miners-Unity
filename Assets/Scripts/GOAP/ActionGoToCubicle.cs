@@ -1,4 +1,4 @@
-﻿public class GoToCubicle : GAction {
+﻿public class ActionGoToCubicle : GAction {
 
     public override bool PrePerform() {
 
