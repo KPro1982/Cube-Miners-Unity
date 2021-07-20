@@ -30,7 +30,7 @@ public class Node {
         this.cost = cost;
         this.state = new Dictionary<string, int>(allStates);
 
-        //as well as the world states add the agents beliefs as states that can be
+        //as well as the world states add the agents agentStates as states that can be
         //used to match preconditions
         foreach (KeyValuePair<string, int> b in beliefStates) {
 

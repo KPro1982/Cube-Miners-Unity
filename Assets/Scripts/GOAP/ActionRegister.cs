@@ -1,4 +1,4 @@
-﻿public class GoHome : GAction {
+﻿public class ActionRegister : GAction {
     public override bool PrePerform() {
 
         return true;
@@ -6,7 +6,6 @@
 
     public override bool PostPerform() {
 
-        Destroy(this.gameObject);
         return true;
     }
 }

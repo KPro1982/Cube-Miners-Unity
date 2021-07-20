@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class GetPatient : GAction {
+public class ActionGetPatient : GAction {
 
     // Resource in this case = cubicle
     GameObject resource;
